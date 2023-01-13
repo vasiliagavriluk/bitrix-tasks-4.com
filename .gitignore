@@ -5,7 +5,7 @@
 /bitrix/*
 
 #All folders except the ones you need
-!/bitrix/modules/sprint.migration
+!/bitrix/modules/sprint.migration/
 
 #But not the templates and non bitrix components
 !/bitrix/templates
