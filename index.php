@@ -2,10 +2,6 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("1С-Битрикс: Управление сайтом");
 
-
-
-
-
 //пишем код
 require_once($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");
 
@@ -67,7 +63,7 @@ if (($handle = fopen($file, "r")) !== false)
         $PROP['DUTY']         = $data[5];              //Основные обязанности
         $PROP['CONDITIONS']   = $data[6];              //Условия работы
         $PROP['EMAIL']        = $data[12];            //Электронная почта (e-mail)
-        $PROP['DATE']         = date('d.m.Y');  //Дата размещения
+        $PROP['DATE']         = date('d.m.Y');         //Дата размещения
         $PROP['TYPE']         = $data[8];              //Тип вакансии
         $PROP['SALARY_TYPE']  = '';                    //Заработная плата
         $PROP['SALARY_VALUE'] = $data[7];              //Заработная плата (значение)
